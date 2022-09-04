@@ -1,7 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./public/**/*.{html,js}",
-  './index.html'
+  './index.html',
+  './node_modules/tw-elements/dist/js/**/*.js'
 ],
   theme: {
     extend: {
@@ -31,5 +32,8 @@ module.exports = {
     }
     },
   },
-  plugins: [],
+  plugins: [
+    require('tw-elements/dist/plugin'),
+    require('tailwindcss-animate/index'),
+  ],
 }
