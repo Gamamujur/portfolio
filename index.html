@@ -10,9 +10,9 @@
 </head>
 
 <body class="overflow-x-hidden">
-    <header id="nav" name="nav" class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10 lg:px-10">
+    <header id="nav" name="nav" class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10 lg:px-10 transition duration-500">
         <div class="container">
-            <div class="flex items-center justify-between relative">
+            <div class="flex items-center justify-between relative h-16">
                 <a href="#home"><div class="px-4 font-mons1 text-black block py-4 text-lg font-bold">Gama
                 </div></a>
 
@@ -27,13 +27,13 @@
                         <nav id="navmenu" class="hidden absolute py-2 bg-white shadow-lg rounded-lg max-w-[150px] w-full right-4 top-full lg:block lg:static lg:max-w-full lg:shadow-none lg:bg-transparent animate-fade-in-down">
                             <ul class="block lg:flex">
                                 <li class="px-2 group">
-                                    <a href="#about" class="text-slate-700 text-base  font-semibold group-hover:text-blue-300 group-hover:transition-colors duration-500 flex mx-1 pb-1 ">About Me</a>
+                                    <a href="#about" class="text-slate-700 text-base lg:text-lg  font-mons1 font-medium group-hover:text-blue-300 group-hover:transition-colors duration-500 flex mx-5 pb-1 ">About Me</a>
                                 </li>
                                 <li class="px-2 group">
-                                    <a href="#activities" class="text-slate-700 text-base font-semibold group-hover:text-blue-300 group-hover:transition-colors duration-500 flex mx-1 pb-1 ">Activity</a>
+                                    <a href="#activities" class="text-slate-700 text-base lg:text-lg font-mons1 font-medium group-hover:text-blue-300 group-hover:transition-colors duration-500 flex mx-5 pb-1 ">Activity</a>
                                 </li>
                                 <li class="px-2 group">
-                                    <a href="#contact" class="text-slate-700 text-base font-semibold group-hover:text-blue-300 group-hover:transition-colors duration-500 flex mx-1 pb-1 ">Contact Me</a>
+                                    <a href="#contact" class="text-slate-700 text-base lg:text-lg font-mons1 font-medium group-hover:text-blue-300 group-hover:transition-colors duration-500 flex mx-5 pb-1 ">Contact Me</a>
                                 </li>
                             </ul>
                         </nav>
@@ -42,12 +42,11 @@
         </div>
     </header>
 
-    <section class="bg-white w-screen h-screen" id="home">
+    <section class="bg-white w-screen h-screen mb-10 lg:mb-0" id="home">
         <div class="container mx-auto lg:hidden">
             <div class="relative top-[105px]  w-[307px] h-[495px] brightness-100 mx-auto bg-blue-300 rounded-2xl">
                 <img src="public/img/bg.png" alt="">
             </div>
-            
             <div class="absolute border-4 top-[455px] -left-[20px] w-full h-[170px]  rounded-tr-[50px] rounded-br-[50px] bg-white px-6 py-2 lg:hidden">
                 <div class="font-mons1 text-white font-normal text-[16px]">
                     <h1 class="text-black font-medium">Hi, my name's</h1>
@@ -59,10 +58,10 @@
         </div>
         </div>
 
-        <div class="hidden lg:block container w-full h-full">
+        <div class="hidden lg:block container w-screen h-screen">
             <div class="grid grid-rows-3 grid-flow-col gap-4 w-full h-full">
-                <div class="row-span-5 mx-auto my-auto"><img src="public/img/bg.png" alt="" width="400" class="lg:absolute bottom-0 bg-blue-300 rounded-tl-3xl rounded-tr-3xl"></div>
-                <div class="row-span-3 col-span-1 mx-auto my-auto"><h1 class="font-bold text-[55px] text-blue-700 animate-in slide-in-from-left-40 fade-in duration-500 ease-in">Gama Mujur Effendy</h1>
+                <div class="row-span-5 mx-auto my-auto"><img src="public/img/bg.png" alt="" width="400"  class="lg:absolute bottom-0 bg-blue-300 rounded-tl-3xl rounded-tr-3xl"></div>
+                <div class="row-span-4 col-span-1 mx-auto my-auto pt-10"><h1 class="font-bold text-[55px] text-blue-700 animate-in slide-in-from-left-40 fade-in duration-500 ease-in">Gama Mujur Effendy</h1>
                     <h1 class="text-[18px] font-medium text-gray-500 ml-2 mb-10 animate-in fade-in-0 ease-in duration-1000">a fresh graduate with a passion in website development</h1>
                     <div class="ml-2"><a href="public/Gama Mujur Effendy-resume.pdf" download><button class="bg-black hover:bg-white hover:text-black text-white font-normal py-2 px-4 rounded mr-8 transition hover:-translate-y-1  hover:scale-110 duration-300">Download CV</button ></a><a href="#contact"><button class="bg-blue-800 hover:bg-white hover:text-black text-white font-semibold py-2 px-4 rounded transition hover:-translate-y-1 hover:scale-110 duration-300 shadow-lg">Contact Me</button ></a></div>
                 </div>
@@ -72,9 +71,9 @@
     </section>
     
 
-    <section class="bg-semiwhite w-screen h-fit mx-auto font-mons1 lg:z-50 lg:pb-40" id="about">
+    <section class="bg-semiwhite w-screen h-fit mx-auto font-mons1 lg:z-50 lg:pb-40 lg:rounded-t-[200px] lg:shadow-[0_25px_50px_0px_rgb(0,0,0,1)] lg:shadow-black" id="about">
         <div class="container mx-auto w-full h-full">
-            <div class="text-center font-bold text-5xl pt-5 lg:pt-20">About Me</div>
+            <div class="text-center font-bold text-5xl pt-5 font-mons1 lg:pt-20">About Me</div>
             <div class="lg:flex w-screen h-fit">
                 <div class="lg:w-1/2">
                 <img src="public/img/Coding _Monochromatic (1).png" class="mx-auto mt-10 lg:w-[600px]" width="400" height="400" alt></div>
@@ -161,10 +160,11 @@
         </div>
     </section>
 
-    <section class="bg-blue-900 w-screen h-fit mx-auto z-0" id="activities">
+    <section class="bg-slate-100 w-screen h-fit mx-auto z-0" id="activities">
         <div class="container w-full self-center">
             <div class="self-center pt-5 w-full">
-                    <img src="public/img/activities.PNG" alt="" class="mx-auto" width="200">
+                    <!-- <img src="public/img/activities.PNG" alt="" class="mx-auto" width="200"> -->
+                    <h1 class="text-center font-mons1 font-bold text-5xl pt-5 lg:pt-20">My Activities</h1>
             </div>
                 <!-- <div class="relative text-5xl text-center pt-5 font-bold text-white mx-auto w-full z-10 self-center">My Activities
                     <span class="absolute left-28 right-5 top-30 -z-20 self-center">
@@ -182,7 +182,8 @@
                     <div class="mb-24 font-mons1 text-base text-white bg-slate-900 text-center w-3/4 mx-auto px-4 py-4 border-2 rounded-3xl shadow-md shadow-white lg:w-1/6">
                         <img src="public/img/UI design _Monochromatic.png" alt="" width="300px" class="mx-auto md:w-1/2">
                         <h1 class="text-3xl font-semibold">Web Designing</h1>
-                        <p class="pt-5 leading-8">Using Figma and Elementor make me easier to make a design as needed. When a design is finished, i always try to implement the design in code.</p>
+                        <p class="pt-5 leading-8 mb-5">Using Figma and Elementor make me easier to make a design as needed. When a design is finished, i always try to implement the design in code.</p>
+                        <a href="https://dev-gamsport.pantheonsite.io/"><span class="mt-10 bg-slate-100 hover:bg-black hover:text-white text-slate-700 font-semibold py-2 px-4 rounded transition hover:-translate-y-1 hover:scale-110 duration-300 shadow-lg">My Elementor Portfolio</span></a>
                     </div>
 
                     <div class="mb-24 font-mons1 text-base text-white bg-slate-900 text-center w-3/4 mx-auto px-4 py-4 border-2 rounded-3xl shadow-md shadow-white lg:w-1/4">
@@ -200,8 +201,9 @@
                     </div>
                     <div class="mb-24 font-mons1 text-base text-white bg-slate-900 text-center w-3/4 mx-auto px-4 py-4 border-2 rounded-3xl shadow-md shadow-white lg:w-1/4">
                         <img src="public/img/UI design _Monochromatic.png" alt="" width="300px" class="mx-auto md:w-1/2">
-                        <h1 class="text-3xl font-semibold">Web Designing</h1>
-                        <p class="pt-5 leading-8">Using Figma and Elementor make me easier to make a design as needed. When a design is finished, i always try to implement the design in code.</p>
+                        <h1 class="text-3xl font-semibold mt-5">Web Designing</h1>
+                        <p class="pt-5 leading-8 mb-5">Using Figma and Elementor make me easier to make a design as needed. When a design is finished, i always try to implement the design in code.</p>
+                        <a href="https://dev-gamsport.pantheonsite.io/"><span class="mt-10 bg-slate-100 hover:bg-black hover:text-white text-slate-700 font-semibold py-2 px-4 rounded transition hover:-translate-y-1 hover:scale-110 duration-300 shadow-lg">My Elementor Portfolio</span></a>
                     </div>
                     <div class="mb-24 font-mons1 text-base text-white bg-slate-900 text-center w-3/4 mx-auto px-4 py-4 border-2 rounded-3xl shadow-md shadow-white lg:w-1/4">
                         <img src="public/img/Innovation _Flatline.png" alt="" class="mx-auto md:w-1/2">

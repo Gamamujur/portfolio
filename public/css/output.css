@@ -3926,13 +3926,13 @@ textarea.form-control.is-invalid {
   grid-row: span 5 / span 5;
 }
 
-.row-span-3 {
-  grid-row: span 3 / span 3;
+.row-span-4 {
+  grid-row: span 4 / span 4;
 }
 
-.mx-1 {
-  margin-left: 0.25rem;
-  margin-right: 0.25rem;
+.mx-5 {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
 }
 
 .mx-auto {
@@ -3943,6 +3943,10 @@ textarea.form-control.is-invalid {
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
 }
 
 .mt-4 {
@@ -3959,10 +3963,6 @@ textarea.form-control.is-invalid {
 
 .ml-2 {
   margin-left: 0.5rem;
-}
-
-.mb-10 {
-  margin-bottom: 2.5rem;
 }
 
 .mt-10 {
@@ -3993,6 +3993,14 @@ textarea.form-control.is-invalid {
   margin-right: 0.75rem;
 }
 
+.mt-96 {
+  margin-top: 24rem;
+}
+
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
 .block {
   display: block;
 }
@@ -4015,6 +4023,10 @@ textarea.form-control.is-invalid {
 
 .hidden {
   display: none;
+}
+
+.h-16 {
+  height: 4rem;
 }
 
 .h-screen {
@@ -4045,6 +4057,14 @@ textarea.form-control.is-invalid {
 
 .h-9 {
   height: 2.25rem;
+}
+
+.h-8 {
+  height: 2rem;
+}
+
+.h-60 {
+  height: 15rem;
 }
 
 .w-full {
@@ -4290,14 +4310,14 @@ textarea.form-control.is-invalid {
   background-color: rgb(45 212 191 / var(--tw-bg-opacity));
 }
 
-.bg-blue-900 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(30 58 138 / var(--tw-bg-opacity));
-}
-
 .bg-slate-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(15 23 42 / var(--tw-bg-opacity));
+}
+
+.bg-slate-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
 }
 
 .fill-current {
@@ -4345,6 +4365,10 @@ textarea.form-control.is-invalid {
 
 .pb-1 {
   padding-bottom: 0.25rem;
+}
+
+.pt-10 {
+  padding-top: 2.5rem;
 }
 
 .pt-5 {
@@ -4417,16 +4441,16 @@ textarea.form-control.is-invalid {
   font-weight: 700;
 }
 
-.font-semibold {
-  font-weight: 600;
+.font-medium {
+  font-weight: 500;
 }
 
 .font-normal {
   font-weight: 400;
 }
 
-.font-medium {
-  font-weight: 500;
+.font-semibold {
+  font-weight: 600;
 }
 
 .font-light {
@@ -4539,12 +4563,12 @@ textarea.form-control.is-invalid {
   transition-duration: 150ms;
 }
 
-.duration-300 {
-  transition-duration: 300ms;
-}
-
 .duration-500 {
   transition-duration: 500ms;
+}
+
+.duration-300 {
+  transition-duration: 300ms;
 }
 
 .duration-1000 {
@@ -4615,14 +4639,14 @@ textarea.form-control.is-invalid {
   --tw-enter-translate-x: -10rem;
 }
 
-.duration-300 {
-  -webkit-animation-duration: 300ms;
-          animation-duration: 300ms;
-}
-
 .duration-500 {
   -webkit-animation-duration: 500ms;
           animation-duration: 500ms;
+}
+
+.duration-300 {
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
 }
 
 .duration-1000 {
@@ -4692,9 +4716,19 @@ textarea.form-control.is-invalid {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-black:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
 .hover\:text-black:hover {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .group:hover .group-hover\:text-blue-300 {
@@ -4727,6 +4761,10 @@ textarea.form-control.is-invalid {
 
   .lg\:z-50 {
     z-index: 50;
+  }
+
+  .lg\:mb-0 {
+    margin-bottom: 0px;
   }
 
   .lg\:block {
@@ -4765,6 +4803,11 @@ textarea.form-control.is-invalid {
     flex: 1 1 0%;
   }
 
+  .lg\:rounded-t-\[200px\] {
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+  }
+
   .lg\:bg-transparent {
     background-color: transparent;
   }
@@ -4787,9 +4830,25 @@ textarea.form-control.is-invalid {
     padding-top: 5rem;
   }
 
+  .lg\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
   .lg\:shadow-none {
     --tw-shadow: 0 0 #0000;
     --tw-shadow-colored: 0 0 #0000;
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .lg\:shadow-\[0_25px_50px_0px_rgb\(0\2c 0\2c 0\2c 1\)\] {
+    --tw-shadow: 0 25px 50px 0px rgb(0,0,0,1);
+    --tw-shadow-colored: 0 25px 50px 0px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .lg\:shadow-black {
+    --tw-shadow-color: #000;
+    --tw-shadow: var(--tw-shadow-colored);
   }
 }
